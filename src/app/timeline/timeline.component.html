@@ -1,0 +1,35 @@
+<div *ngIf="timelineCards != null" class="container">
+  <div *ngIf="getTimelineHeader() != null" class="page-header">
+    <h1 id="timeline">{{getTimelineHeader()}}</h1>
+  </div>
+  <ul class="timeline">
+
+    <li *ngFor="let card of timelineCards" class="{{cardClass(card)}}">
+
+      <div class="timeline-badge {{card.imgColorClass}} bg-white">
+        <i class=" {{card.imgClass}}"></i>
+      </div>
+
+      <div class="timeline-panel {{card.class}} bg-white">
+        <div class="timeline-heading">
+          <h4 class="timeline-title"> {{card.title}}</h4>
+          <p *ngIf="card.additionalHeaderTitle != null">
+            <small class="{{card.additionalHeaderTitleStyleClass}}">
+              <i class="{{card.additionalHeaderTitleImgClass}}"></i>
+              {{card.additionalHeaderTitle}}
+            </small>
+          </p>
+        </div>
+
+        <div *ngIf="card.content != null" class="timeline-body">
+          <div>
+            <div *ngFor="let line of card.content" [class.pb3]="line == null">
+              {{line}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>

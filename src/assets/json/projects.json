@@ -1,0 +1,47 @@
+﻿[
+  {
+    "name": "LinqMeta",
+    "description": "Более производительная версия LINQ",
+    "sourceCodeUrl": {
+      "url": "https://github.com/blowin/LinqMeta",
+      "name": "Github"
+    },
+    "language": "C#"
+  },
+  {
+    "name": "WordProcessor",
+    "description": "Небольшая программа для манипуляции с текстом. Позволяет заменить буквы на прочерк, перемешать слова. Удобно для составления домашнего задания при изучении языка.",
+    "sourceCodeUrl": {
+      "url": "https://github.com/blowin/WordProcessor",
+      "name": "Github"
+    },
+    "language": "C#"
+  },
+  {
+    "name": "LTRemover",
+    "description": "Программа для сортировки файлов по папкам",
+    "sourceCodeUrl": {
+      "url": "https://github.com/blowin/LTRemover",
+      "name": "Github"
+    },
+    "language": "Kotlin"
+  },
+  {
+    "name": "Mediator.Lite",
+    "description": "Простая реализация паттерна медиатор. Более быстрый аналог MediatR",
+    "sourceCodeUrl": {
+      "url": "https://github.com/blowin/Mediator.Lite",
+      "name": "Github"
+    },
+    "language": "C#"
+  },
+  {
+    "name": "Сайт портфолио",
+    "description": "Этот сайт :)",
+    "sourceCodeUrl": {
+      "url": "https://github.com/blowin/portfolio",
+      "name": "Github"
+    },
+    "language": "C#"
+  }
+]

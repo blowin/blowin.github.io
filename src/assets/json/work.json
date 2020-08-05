@@ -1,0 +1,49 @@
+﻿[
+  {
+    "company": "Корпитек",
+    "technologies": [
+      "CRM системы",
+      "WCF",
+      "ADO Net",
+      "Win Forms",
+      "DevExpress",
+      "MSSQL",
+      "FluentValidation",
+      "TFS",
+      "Разработал Task Scheduler",
+      "Работа с электронным документооборотом",
+      "Работа с большой кодовой базой",
+      "Опыт написания SQL запросов",
+      "Serilog"
+    ],
+    "description": "Разработка клиентского приложения, а также работа с WCF сервисом",
+    "startDate": "2018-08-01T00:00:00",
+    "endDate": null,
+    "isWork": true,
+    "formatWorkRange": "2018 - по настоящее время"
+  },
+  {
+    "company": "FuryLion",
+    "technologies": [
+      "Unity",
+      "UniRx",
+      "DOTween",
+      "Photon Network",
+      "Zenject"
+    ],
+    "description": "Разрабатывал мобильные приложения",
+    "startDate": "2018-05-01T00:00:00",
+    "endDate": "2018-08-01T00:00:00",
+    "isWork": true,
+    "formatWorkRange": "2018 - 2018"
+  },
+  {
+    "company": "ПГУ",
+    "technologies": null,
+    "description": "Высшее. Полоцкий государственный университет. Факультет информационных технологий.",
+    "startDate": "2014-09-01T00:00:00",
+    "endDate": "2018-07-01T00:00:00",
+    "isWork": false,
+    "formatWorkRange": "2014 - 2018"
+  }
+]

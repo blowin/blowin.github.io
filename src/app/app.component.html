@@ -1,0 +1,67 @@
+<section class="white h-auto vh-100-ns cover flex flex-column justify-center pb5 relative">
+  <div class="tl-l pl4 pl7-l">
+    <h1 class="mt0 mb3 font-heading fw4 cover-head">Привет. Я Blowin</h1>
+    <p class="mt0">aka. Сущевский Дмитрий - .Net разработчик. Люблю музыку и технологии</p>
+    <div class="ma0 pa0 list flex flex-wrap justify-center justify-start-l">
+      <li class="mr3" *ngFor="let link of linkButtons">
+        <a class="flex pa2 f2 hover-text-gradient no-underline cover-icon" href="{{link.href}}">
+          <span class="{{link.iconClass}}"> </span>
+        </a>
+      </li>
+    </div>
+  </div>
+</section>
+<section class="pb5 relative bg-theme-dark-white">
+  <div class="h025 bg-theme-peach-to-purple"></div>
+  <div class="mw9 ph3 center">
+    <h2 class="font-heading fw4 f2 mb0">Обо мне</h2>
+    <div class="flex justify-between flex-column flex-row-l items-start">
+      <div class="order-1 order-0-l nested-links w-40-l">
+        <p *ngIf="getCurrentJob() == null; else hasJob">
+          Дмитрий Сущевский - разработчик.
+        </p>
+        <ng-template #hasJob>
+          Дмитрий Сущевский - разработчик.
+          На данный момент работаю в {{getCurrentJob().company}}.
+        </ng-template>
+        <p>
+          Обладают отличными техническими навыками, навыками общения.
+        </p>
+        <p>
+          Я мотивирован и полон энтузиазма к новым проектам и задачам.
+        </p>
+        <p>
+          Мне нравится работать на сложных проектах, которые дают возможности для обучения и имеют интересные задачи.
+        </p>
+        <p>
+          Ответственно подхожу к рабочему процессу, полностью фокусируясь на поставленной задаче.
+        </p>
+        <p>
+          Всегда открыт для изучения новых подходов и технологий.
+        </p>
+        <p>
+          Увлекаюсь разработкой, кино и хорошей музыкой :)
+        </p>
+      </div>
+      <img class="order-0 order-1-l ml0 ml4-l w-80 w-50-ns" src="/assets/images/programming.svg" alt="Programming at a desk">
+    </div>
+  </div>
+</section>
+<section class="pb5 relative bg-theme-dark-white">
+  <div class="h025 bg-theme-peach-to-purple"></div>
+  <div class="mw9 ph3 center">
+    <h2 class="font-heading fw4 f2 mb0">Проекты</h2>
+    <p class="mw7">
+      Самый простой способ показать их, это Github<br>
+      Это небольшой список проектов над которыми я работаю
+    </p>
+    <app-project-list [projects]="projects"></app-project-list>
+
+  </div>
+</section>
+<section class="pb5 relative bg-theme-dark-white">
+  <div class="h025 bg-theme-light-purple-to-blue"></div>
+  <div class="mw9 ph3 center">
+    <app-timeline [places]="places"></app-timeline>
+  </div>
+</section>
