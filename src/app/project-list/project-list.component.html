@@ -1,6 +1,7 @@
 <div *ngIf="projects != null" class="flex flex-wrap">
   <div *ngFor="let project of projects"class="w-100 w-50-m w-third-l pa2 flex">
-    <a class="card hover-pop hover-theme-peach hover-gradient hover-theme-grey-to-peach-light-blue pa1 no-underline flex w-100" href="{{project.sourceCodeUrl?.url}})">
+    <a class="card hover-pop hover-theme-peach hover-gradient hover-theme-grey-to-peach-light-blue pa1 no-underline flex w-100"
+       href="{{project.sourceCodeUrl?.url}}">
       <div class="flex flex-column justify-between pa3 w-100 bg-project-card">
         <div class="black">
           <h3 class="font-heading fw4 f3-l f4 mt0 mb2">{{project.name}}</h3>
