@@ -43,5 +43,14 @@
       "name": "Github"
     },
     "language": "C#"
+  },
+  {
+    "name": "Shutdown",
+    "description": "Графический интерфейс для shutdown.exe",
+    "sourceCodeUrl": {
+      "url": "https://github.com/blowin/Shutdown",
+      "name": "Github"
+    },
+    "language": "F#, C#"
   }
 ]
