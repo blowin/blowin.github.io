@@ -86,9 +86,23 @@ export class TimelineComponent implements OnChanges {
 
     const minStartDate = new Date(Math.min.apply(null, startDateSeq));
     const maxEndDate = new Date(Math.max.apply(null, endDateSeq));
-    const month = moment(moment(maxEndDate).diff(minStartDate)).months() + 1;
+    const month = moment(moment(maxEndDate).diff(minStartDate)).month() + 1;
+    const year = Math.trunc(moment(maxEndDate).diff(minStartDate, 'year', true));
 
-    return `Опыт разработки ${moment(minStartDate).lang('ru').from(maxEndDate, true)} ${month} ${this.formatMonth(month)}`;
+    return `Опыт разработки ${(year)} ${this.formatYear(year)} ${month} ${this.formatMonth(month)}`;
+  }
+
+  formatYear(year: number): string {
+    switch (year){
+      case 1:
+        return 'год';
+      case 2:
+      case 3:
+      case 4:
+        return 'года';
+      default:
+        return 'лет';
+    }
   }
 
   formatMonth(month: number): string {
