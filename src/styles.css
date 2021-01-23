@@ -3622,7 +3622,7 @@ input[type=date], input[type=datetime], input[type=datetime-local] {
 
 :root {
   --theme-white: #ffffff;
-  --theme-dark-white: #f3f3f3;
+  --theme-dark-white: #ffffff;
   --theme-black: #050505;
   --theme-dark-grey: #1e1e1e;
   --theme-light-grey: #999;
@@ -3771,7 +3771,7 @@ body {
   background-color: var(--theme-dark-purple-tint)
 }
 
-.bg-theme-dark-white{
+.site-bg-theme{
   background-color: var(--theme-dark-white)
 }
 
