@@ -6,7 +6,6 @@ export default moment;
 
 export class TimelineCard {
   inverted: boolean;
-  imgClass: string;
   class: string;
   imgColorClass: string;
   title: string;
@@ -69,8 +68,7 @@ export class TimelineComponent implements OnChanges {
       res.inverted = inverted;
       res.content = TimelineComponent.getContent(place);
       res.additionalHeaderTitle = place.formatWorkRange();
-      res.imgColorClass = place.getOptionalEndDate().HasValue ? 'info' : 'success';
-      res.imgClass = 'fal fa-briefcase';
+      res.imgColorClass = place.getOptionalEndDate().HasValue ? 'previous_color' : 'active_color';
       res.class = inverted ? 'animate__animated animate__fadeInRight' : 'animate__animated animate__fadeInLeft';
       return res;
     });
