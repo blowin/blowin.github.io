@@ -22,8 +22,7 @@ export class AppComponent {
     { iconClass: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/dmitry-sushchevsky/' },
     { iconClass: 'fab fa-instagram', href: 'https://www.instagram.com/icyicebrrg/' },
     { iconClass: 'fab fa-github', href: 'https://github.com/blowin' },
-    { iconClass: 'fab fa-telegram', href: 'https://t.me/kolvice/' },
-    { iconClass: 'fal fa-envelope', href: 'mail:dsessence@gmail.com' }
+    { iconClass: 'fab fa-telegram', href: 'https://t.me/kolvice/' }
   ];
 
   places: Place[];

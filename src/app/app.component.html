@@ -65,3 +65,15 @@
     <app-timeline [places]="places"></app-timeline>
   </div>
 </section>
+<section class="bg-theme-dark-white pt6 pb6" style="background-color: rgb(8,8,6);">
+  <div class="flex flex-column justify-center white h-100 w-100">
+    <div class="f2 center">dsessence@gmail.com</div>
+    <div class="pt4 center ma0 pa0 list flex flex-wrap justify-center justify-start-l">
+      <li class="mr3" *ngFor="let link of linkButtons">
+        <a class="flex pa2 f2 hover-text-gradient no-underline cover-icon" href="{{link.href}}">
+          <span class="{{link.iconClass}}"> </span>
+        </a>
+      </li>
+    </div>
+  </div>
+</section>
